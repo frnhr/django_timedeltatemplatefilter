@@ -5,6 +5,8 @@ That is: timedelta template filter for Django :)
 
 Format timedelta values nicely in your templates.
 
+[![Build Status](https://api.travis-ci.org/frnhr/django_timedeltatemplatefilter.png)](https://travis-ci.org/frnhr/django_timedeltatemplatefilter)
+
 ## What
 
 New filter named "timedelta"
