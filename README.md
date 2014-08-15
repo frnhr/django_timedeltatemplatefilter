@@ -18,7 +18,7 @@ A timedelta value with django-timedeltatemplatefilter_demo filter:
  * 04:03 `{{ dt|timedelta:{hours2}:{minutes2}" }}`
  * 4:3 `{{ dt|timedelta:{hours}:{minutes}" }}`
 
-## Moar
+#### Moar!
 
 Another timedelta value: 2620 days, 4:03:21 `{{ dt2 }}`
 
@@ -28,6 +28,38 @@ A timedelta value with django-timedeltatemplatefilter_demo filter:
  * 62884 hours `{{ dt2|timedelta:{hours_total} hours" }}`
 
 ## Details
+
+### Installation & usage
+
+##### 1) Install the packet
+    pip install django_timedeltatemplatefilter
+
+You are hereby granted the right to do a copy and paste :)
+
+Or you could just take the `timedeltatemplatefilter` directory and dump it next to your other apps, if you'd like.... for some reason... yeah.
+
+##### 2) add to INSTALLED_APPS
+
+Pretty much anywhere in your INSTALLED_APPS...
+
+    INSTALLED_APPS = (
+        # ... stuff ...
+        'timedeltatemplatefilter',
+        # ... stuff ---
+    )
+
+##### 3) Load in your template
+
+In any template that you with to use this filter in, add:
+
+    {% load timedelta_filter %}
+
+to the top, but after `{% extends ... %}`.
+
+##### 4) Use it
+
+See the example at the top of this file.
+
 
 ### Supported units
 
