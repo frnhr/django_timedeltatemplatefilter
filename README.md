@@ -90,6 +90,21 @@ See the example at the top of this file.
 \* Leap years are not taken into account, 1 year = 365 days
 
 
+### Additional values
+
+A few values are available in 2-digit form. These are:
+ * `{seconds2}`
+ * `{minutes2}`
+ * `{hours2}`
+
+
+## What's that {} thing?
+
+See python's [string format function][1].
+
+
 ## Todo & Ideas
 
  * add a template tag that provides a nice python object in template context, so that we can use it like `{{ dt.hours }}:{{ dt.minutes }}` etc.
+ 
+[1]: https://docs.python.org/2/library/string.html#format-string-syntax
