@@ -31,11 +31,11 @@ A timedelta value with django-timedeltatemplatefilter filter:
 Another timedelta value: 2620 days, 4:03:21 `{{ dt2 }}`
 
 A timedelta value with django-timedeltatemplatefilter filter:
- * `2620 days, 04:03:21`, rendered using:
+ * `2620 days, 04:03:21`, rendered using:  
    `{{ dt2|timedelta:"{days_total} days, {hours2}:{minutes2}:{seconds2}" }}`
- * `7 years, 65 days, 4 hours`, rendered using:
+ * `7 years, 65 days, 4 hours`, rendered using:  
    `{{ dt2|timedelta:"{years} years, {days} days, {hours} hours" }}`
- * `62884 hours`, rendered using:
+ * `62884 hours`, rendered using:  
    `{{ dt2|timedelta:"{hours_total} hours" }}`
 
 ## Details
