@@ -19,7 +19,7 @@ New template filter named "timedelta"
 A timedelta value: `4:03:21` rendered using: `{{ dt }}`
 
 A timedelta value with django-timedeltatemplatefilter filter:
- * `04:03:21`, rendered using:  
+ * `04:03:21`, rendered using:      
    `{{ dt|timedelta:"{hours2}:{minutes2}:{seconds2}" }}`
  * `04:03`, rendered using:  
    `{{ dt|timedelta:"{hours2}:{minutes2}" }}`
@@ -28,7 +28,7 @@ A timedelta value with django-timedeltatemplatefilter filter:
 
 #### Moar!
 
-Another timedelta value: 2620 days, 4:03:21 `{{ dt2 }}`
+Another timedelta value: `2620 days, 4:03:21`, rendered using: `{{ dt2 }}`
 
 A timedelta value with django-timedeltatemplatefilter filter:
  * `2620 days, 04:03:21`, rendered using:  
@@ -98,13 +98,13 @@ See the example at the top of this file.
 
 ### Additional values
 
-A few values are available in 2-digit form. These are:
+A few values are available in 2-digit form. Means that one-digit values are going to be padded with a `0` in front. These are:
  * `{seconds2}`
  * `{minutes2}`
  * `{hours2}`
 
 
-## What's that {} thing?
+### What's that `{stuff}` thing?
 
 See python's [string format function][1].
 
