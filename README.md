@@ -7,7 +7,7 @@ Format timedelta values nicely in your templates.
 
 [![Build Status](https://api.travis-ci.org/frnhr/django_timedeltatemplatefilter.png)](https://travis-ci.org/frnhr/django_timedeltatemplatefilter)
 
-v0.1.1
+v0.1.2
 
 
 ## What
