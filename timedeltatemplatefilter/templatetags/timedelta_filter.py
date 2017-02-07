@@ -1,6 +1,8 @@
 from __future__ import division
 from math import floor
+from datetime import datetime
 from django import template
+
 
 register = template.Library()
 
@@ -31,6 +33,10 @@ def timedelta(value, time_format="{days} days, {hours2}:{minutes2}:{seconds2}"):
     years_total = years
     days -= years * 365
 
+    months = int(floor(days/30))
+    months_total = months
+    days -= months * 30
+
     return time_format.format(**{
         'seconds': seconds,
         'seconds2': str(seconds).zfill(2),
@@ -39,11 +45,13 @@ def timedelta(value, time_format="{days} days, {hours2}:{minutes2}:{seconds2}"):
         'hours': hours,
         'hours2': str(hours).zfill(2),
         'days': days,
+        'months': months,
         'years': years,
         'seconds_total': seconds_total,
         'minutes_total': minutes_total,
         'hours_total': hours_total,
         'days_total': days_total,
+        'months_total': months_total,
         'years_total': years_total,
     })
 
