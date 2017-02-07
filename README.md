@@ -37,6 +37,8 @@ A timedelta value with django-timedeltatemplatefilter filter:
    `{{ dt2|timedelta:"{years} years, {days} days, {hours} hours" }}`
  * `62884 hours`, rendered using:  
    `{{ dt2|timedelta:"{hours_total} hours" }}`
+ * `7 years, 2 months, 5 days`, rendered using:
+   `{{ dt2|timedelta:"{years} years, {months} months, {days} days" }}`
 
 ## Details
 
@@ -77,6 +79,7 @@ See the example at the top of this file.
  * seconds
  * minutes
  * hours
+ * months
  * days
  * years
 
@@ -88,13 +91,14 @@ See the example at the top of this file.
  * `{minutes_total}` - total number of minutes, rounded down
  * `{hours}` - number of hours until full day
  * `{hours_total}` - total number of hours, rounded down
- * `{days}` - number of days until full year*
+ * `{days}` - number of days until full month
  * `{days_total}` - total number of days, rounded down
- * `{years}` - number of years*
+ * `{months}` - number of months* until full year
+ * `{months_total}` - total number of months*, rounded down
+ * `{years}` - number of years
  * `{years_total}` - alias for {years}
- 
-\* Leap years are not taken into account, 1 year = 365 days
 
+A month is counted for 30 days.
 
 ### Additional values
 

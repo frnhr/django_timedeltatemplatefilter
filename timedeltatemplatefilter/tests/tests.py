@@ -18,6 +18,8 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours2}'), '00')
         self.assertEqual(the_filter(test_value, '{days}'), '0')
         self.assertEqual(the_filter(test_value, '{days_total}'), '0')
+        self.assertEqual(the_filter(test_value, '{months}'), '0')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '0')
         self.assertEqual(the_filter(test_value, '{years}'), '0')
         self.assertEqual(the_filter(test_value, '{years_total}'), '0')
 
@@ -34,6 +36,8 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours2}'), '00')
         self.assertEqual(the_filter(test_value, '{days}'), '0')
         self.assertEqual(the_filter(test_value, '{days_total}'), '0')
+        self.assertEqual(the_filter(test_value, '{months}'), '0')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '0')
         self.assertEqual(the_filter(test_value, '{years}'), '0')
         self.assertEqual(the_filter(test_value, '{years_total}'), '0')
 
@@ -50,6 +54,8 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours2}'), '00')
         self.assertEqual(the_filter(test_value, '{days}'), '0')
         self.assertEqual(the_filter(test_value, '{days_total}'), '0')
+        self.assertEqual(the_filter(test_value, '{months}'), '0')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '0')
         self.assertEqual(the_filter(test_value, '{years}'), '0')
         self.assertEqual(the_filter(test_value, '{years_total}'), '0')
 
@@ -66,6 +72,8 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours2}'), '00')
         self.assertEqual(the_filter(test_value, '{days}'), '0')
         self.assertEqual(the_filter(test_value, '{days_total}'), '0')
+        self.assertEqual(the_filter(test_value, '{months}'), '0')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '0')
         self.assertEqual(the_filter(test_value, '{years}'), '0')
         self.assertEqual(the_filter(test_value, '{years_total}'), '0')
 
@@ -82,6 +90,8 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours2}'), '07')
         self.assertEqual(the_filter(test_value, '{days}'), '0')
         self.assertEqual(the_filter(test_value, '{days_total}'), '0')
+        self.assertEqual(the_filter(test_value, '{months}'), '0')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '0')
         self.assertEqual(the_filter(test_value, '{years}'), '0')
         self.assertEqual(the_filter(test_value, '{years_total}'), '0')
 
@@ -98,6 +108,8 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours2}'), '17')
         self.assertEqual(the_filter(test_value, '{days}'), '0')
         self.assertEqual(the_filter(test_value, '{days_total}'), '0')
+        self.assertEqual(the_filter(test_value, '{months}'), '0')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '0')
         self.assertEqual(the_filter(test_value, '{years}'), '0')
         self.assertEqual(the_filter(test_value, '{years_total}'), '0')
 
@@ -114,6 +126,8 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours2}'), '00')
         self.assertEqual(the_filter(test_value, '{days}'), '4')
         self.assertEqual(the_filter(test_value, '{days_total}'), '4')
+        self.assertEqual(the_filter(test_value, '{months}'), '0')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '0')
         self.assertEqual(the_filter(test_value, '{years}'), '0')
         self.assertEqual(the_filter(test_value, '{years_total}'), '0')
 
@@ -128,8 +142,10 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours}'), '0')
         self.assertEqual(the_filter(test_value, '{hours_total}'), '1776')
         self.assertEqual(the_filter(test_value, '{hours2}'), '00')
-        self.assertEqual(the_filter(test_value, '{days}'), '74')
+        self.assertEqual(the_filter(test_value, '{days}'), '14')
         self.assertEqual(the_filter(test_value, '{days_total}'), '74')
+        self.assertEqual(the_filter(test_value, '{months}'), '2')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '2')
         self.assertEqual(the_filter(test_value, '{years}'), '0')
         self.assertEqual(the_filter(test_value, '{years_total}'), '0')
 
@@ -146,6 +162,8 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours2}'), '00')
         self.assertEqual(the_filter(test_value, '{days}'), '0')
         self.assertEqual(the_filter(test_value, '{days_total}'), '3650')
+        self.assertEqual(the_filter(test_value, '{months}'), '0')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '120')
         self.assertEqual(the_filter(test_value, '{years}'), '10')
         self.assertEqual(the_filter(test_value, '{years_total}'), '10')
 
@@ -160,8 +178,10 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours}'), '7')
         self.assertEqual(the_filter(test_value, '{hours_total}'), '296287')
         self.assertEqual(the_filter(test_value, '{hours2}'), '07')
-        self.assertEqual(the_filter(test_value, '{days}'), '300')
+        self.assertEqual(the_filter(test_value, '{days}'), '0')
         self.assertEqual(the_filter(test_value, '{days_total}'), '12345')
+        self.assertEqual(the_filter(test_value, '{months}'), '10')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '406')
         self.assertEqual(the_filter(test_value, '{years}'), '33')
         self.assertEqual(the_filter(test_value, '{years_total}'), '33')
 
@@ -178,6 +198,8 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours2}'), '13')
         self.assertEqual(the_filter(test_value, '{days}'), '12')
         self.assertEqual(the_filter(test_value, '{days_total}'), '4027')
+        self.assertEqual(the_filter(test_value, '{months}'), '0')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '132')
         self.assertEqual(the_filter(test_value, '{years}'), '11')
         self.assertEqual(the_filter(test_value, '{years_total}'), '11')
 
@@ -194,5 +216,7 @@ class SimpleTestCase(TestCase):
         self.assertEqual(the_filter(test_value, '{hours2}'), '13')
         self.assertEqual(the_filter(test_value, '{days}'), '12')
         self.assertEqual(the_filter(test_value, '{days_total}'), '4027')
+        self.assertEqual(the_filter(test_value, '{months}'), '0')
+        self.assertEqual(the_filter(test_value, '{months_total}'), '132')
         self.assertEqual(the_filter(test_value, '{years}'), '11')
         self.assertEqual(the_filter(test_value, '{years_total}'), '11')
