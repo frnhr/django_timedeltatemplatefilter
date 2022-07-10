@@ -85,6 +85,7 @@ See the example at the top of this file.
  * `{seconds}` - number of seconds until full minute
  * `{seconds_total}` - total number of seconds
  * `{minutes}` - number of minutes until full hour
+ * `{dec_minutes}` - minutes until full hour in decimal
  * `{minutes_total}` - total number of minutes, rounded down
  * `{hours}` - number of hours until full day
  * `{hours_total}` - total number of hours, rounded down
@@ -101,6 +102,7 @@ See the example at the top of this file.
 A few values are available in 2-digit form. Means that one-digit values are going to be padded with a `0` in front. These are:
  * `{seconds2}`
  * `{minutes2}`
+ * `{dec_minutes2}`
  * `{hours2}`
 
 

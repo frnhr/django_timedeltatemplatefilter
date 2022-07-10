@@ -22,6 +22,7 @@ def timedelta(value, time_format="{days} days, {hours2}:{minutes2}:{seconds2}"):
     hours = int(floor(minutes / 60))
     hours_total = hours
     minutes -= hours * 60
+    dec_minutes = minutes / 60
 
     days = int(floor(hours / 24))
     days_total = days
@@ -35,6 +36,8 @@ def timedelta(value, time_format="{days} days, {hours2}:{minutes2}:{seconds2}"):
         'seconds': seconds,
         'seconds2': str(seconds).zfill(2),
         'minutes': minutes,
+        'dec_minutes': dec_minutes,
+        'dec_minutes2': str(dec_minutes).zfill(2),
         'minutes2': str(minutes).zfill(2),
         'hours': hours,
         'hours2': str(hours).zfill(2),
@@ -46,4 +49,3 @@ def timedelta(value, time_format="{days} days, {hours2}:{minutes2}:{seconds2}"):
         'days_total': days_total,
         'years_total': years_total,
     })
-
