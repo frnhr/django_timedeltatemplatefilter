@@ -38,7 +38,6 @@ def timedelta(value, time_format="{days} days, {hours2}:{minutes2}:{seconds2}"):
         'minutes': minutes,
         'minutes2': str(minutes).zfill(2),
         'dec_minutes': str(dec_minutes)[:-1].lstrip('0') + str(dec_minutes)[-1],
-        'dec_minutes2': str(dec_minutes)[:-1].lstrip('0') + str(dec_minutes)[-1].zfill(2),
         'hours': hours,
         'hours2': str(hours).zfill(2),
         'days': days,
